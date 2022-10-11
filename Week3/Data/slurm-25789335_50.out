@@ -1,0 +1,68 @@
+                      :-) GROMACS - gmx mdrun, 2020.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.4
+Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2022fa/rmo302/comp-lab-class/Week3
+Command line:
+  gmx_mpi mdrun -deffnm md_50
+
+
+Back Off! I just backed up md_50.log to ./#md_50.log.1#
+Reading file md_50.tpr, VERSION 2020.4 (single precision)
+Changing nstlist from 10 to 50, rlist from 1 to 1.116
+
+Using 10 MPI processes
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Back Off! I just backed up md_50.xtc to ./#md_50.xtc.1#
+
+Back Off! I just backed up md_50.edr to ./#md_50.edr.1#
+starting mdrun 'LYSOZYME in water'
+25000000 steps,  50000.0 ps.
+
+Writing final coordinates.
+
+
+Dynamic load balancing report:
+ DLB was off during the run due to low measured imbalance.
+ Average load imbalance: 1.7%.
+ The balanceable part of the MD step is 66%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 1.1%.
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:   696776.893    69677.690     1000.0
+                         19h21:17
+                 (ns/day)    (hour/ns)
+Performance:       62.000        0.387
+
+GROMACS reminds you: "Computer science is no more about computers than astronomy is about telescopes" (Edsger Dijkstra)
+
